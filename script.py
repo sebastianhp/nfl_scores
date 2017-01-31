@@ -6,7 +6,7 @@ from matplotlib.patches import Ellipse
 import matplotlib.gridspec as gridspec
 
 snew = np.load('./scores/mat_scores.npy')
-inset = False
+inset = True
 
 if inset == False:
 	titleadd = ''
@@ -113,4 +113,5 @@ else:
 							path_effects.Normal() ] )
 
 plt.show()
-fig.savefig('./Plots/2D.png', dpi=100)	
+fig.savefig('./Plots/2DInset.png', dpi=150)	
+fig.savefig('./Plots/2DInsetLowRes.png', dpi=30)	

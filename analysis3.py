@@ -84,6 +84,7 @@ if inset == False:
 	cb.ax.set_yticklabels(cb_arr)
 else:
 	ax.axis([0,sz,0,sz])
+	cb = plt.colorbar(plot)
 	'''
 	for i in range(sz):
 		for j in range(sz):
@@ -105,4 +106,4 @@ else:
 							path_effects.Normal() ] )
 	'''
 plt.show()
-fig.savefig('./Plots/SymElemInset.png', dpi=100)
+#fig.savefig('./Plots/SymElemInset.png', dpi=100)
