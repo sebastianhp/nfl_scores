@@ -1,0 +1,15 @@
+Summary of analysis:
+
+1.  (script) Bare distribution. Center of mass is slightly
+    off symmetry axis, favoring home team.
+    2D.png 2DInset.png   2DInsetLowRes.png
+
+
+2.  (analysis2) Point differential density function: for a given 
+	point differenetial, compute home team wins minus away team 
+	wins. This analysis shows home team has always had an advantage. 
+	(Should I normalize??- yes)
+
+3.  (analysis3) Distrubution of symmetric element ratios. Here we 
+    see that home teams are usually favored in lopsided games, and 
+	especially in shutouts.

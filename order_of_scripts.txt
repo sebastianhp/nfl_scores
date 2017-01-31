@@ -1,0 +1,16 @@
+first need to download score list from pro-football-reference by
+going to http://www.pro-football-reference.com/boxscores/game-scores.htm
+and saving the table as a text file (scores.txt). Then, need to 
+partition table into two files (scores1.txt, scores2.txt), so that 
+when downloading total scores server won't deny access due to too 
+many requests. In the past, 600 scores per file seems OK.
+Then,
+
+main.py:        does the downloading of scores and saves them to
+                fmt_scores1.npy and fmt_scores2.npy. Has to be run 
+                twice, for scores1.txt and scores2.txt.
+
+analysis.py:    write the mat_scores.npy file, which combines
+                scores1.txt and scores2.txt.
+
+
